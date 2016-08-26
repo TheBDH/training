@@ -1,0 +1,34 @@
+<!DOCTYPE=HTML>
+	<html>
+		<head>
+			<title>My first webpage!</title>
+			<style>
+				h1, h2 {
+					font: sans-serif;
+				}
+			</style>
+			<script>
+				function changeText(txt) {
+					document.getElementById("name").innerHTML = txt;
+				}
+				function changeName() {
+					name = prompt("Enter your name", "Emma")
+					if (name != null) {
+						changeText(name)
+					}
+				}
+			</script>
+		</head>
+		<body>
+			<h1>This is my first webpage</h1>
+			<p>This is the content of my first webpage. I love coding, and I love The Herald. I'm learning so much!</p> 
+			<p>My name is <span id="name">Emma</span>.</p>
+			<button onclick="changeName()">Change Name</button>
+			<h1>Why I love coding and The Herald</h1>
+			<h2>This is why I love coding</h2>
+			<p>I love coding because it allows me to think in a	logical and structured way. Plus I get to work on cool projects!</p> 
+			<h2>This is why I love The Herald</h2>
+			<p>I learned to code at The Herald, and I've made all 
+			these friends, and I get to do cool projects about stuff I care about!</p>
+		</body>
+	</html>
